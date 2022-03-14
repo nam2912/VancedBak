@@ -33,15 +33,15 @@ We would need to pick 4 apk files:
 
 If done correctly step by step, you should be able to have the stock YouTube app installed for Vanced to be installed to. \
 
-6.) Install and open up Termux and `su` and it should ask for Root Permission, press Grant on the popup.
-7.) Type in `pm path com.google.android.youtube` and it should pop out with 4 packages.
-8.) Long press the screen to select the text and select the directory **WITHOUT** the apk inside it, then press Copy.
-9.) Type in `cd /path/to/vanced/root/Theme`, to check if you are in the directory type in `ls` and check if the dark, black, dpi, stock apks.
-10.) Pick out you're preffered theme, type in `mv ./(ur theme apk).apk ./base.apk`, and type in `ls` and check if you're apk got renamed to `base.apk`
-11.) Type in `cp ./base.apk (long press the screen and press paste to add the path)`. (Check the screenshot below)
-12.) To check we have changed the apk successfully, type in `diff ./base.apk (long press the screen and press paste to add the path)`, and if nothing came out, move onto the next step.
-13.) Type in `chcon -R u:object_r:system_file:s0 (paste in directory)/base.apk`, and if it didnt spit out errors go to the next step.
-14.) Go to Settings > Apps > See all apps > YouTube
-15.) Press Force Stop and then open the app.
+6.) Install and open up Termux and `su` and it should ask for Root Permission, press Grant on the popup. \
+7.) Type in `pm path com.google.android.youtube` and it should pop out with 4 packages. \
+8.) Long press the screen to select the text and select the directory **WITHOUT** the apk inside it, then press Copy. \
+9.) Type in `cd /path/to/vanced/root/Theme`, to check if you are in the directory type in `ls` and check if the dark, black, dpi, stock apks. \
+10.) Pick out you're preffered theme, type in `mv ./(ur theme apk).apk ./base.apk`, and type in `ls` and check if you're apk got renamed to `base.apk` \
+11.) Type in `cp ./base.apk (long press the screen and press paste to add the path)`. (Check the screenshot below) \
+12.) To check we have changed the apk successfully, type in `diff ./base.apk (long press the screen and press paste to add the path)`, and if nothing came out, move onto the next step. \
+13.) Type in `chcon -R u:object_r:system_file:s0 (paste in directory)/base.apk`, and if it didnt spit out errors go to the next step. \
+14.) Go to `Settings > Apps > See all apps > YouTube` \
+15.) Press Force Stop and then open the app. \
 
 If done correctly step by step, you should be able to have Vanced installed onto you're phone!
